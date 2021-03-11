@@ -1,12 +1,10 @@
 :root {
-  --blue: #273FAD;
-  --green: #3FAD27;
+  --green: #287218;
   --red: 	#ad273f;
-  --background: #EBEBEB;
-  --shapes: #FFFFFF;
-  --text-title: #3D3D4D;
-  --text: #1C1C29;
-  --text-light: #A09CB1;
+  --text: #EBEBEB;
+  --text-gray: #9b9b9b;
+  --shapes: rgba(255, 255, 255, 0.05);
+  --background: #1C1C29;
 }
 
 * {
@@ -15,9 +13,19 @@
   box-sizing: border-box;
 }
 
-body {
+body {  
   font: 16px "Poppins", Arial, sans-serif;
-  color: #121214;
+  color: var(--text);
+
+  background-color: var(--background);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3rem;
 }
 
 input, textarea {
